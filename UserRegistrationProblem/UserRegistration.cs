@@ -29,5 +29,12 @@ namespace UserRegistrationProblem
         {
             return Regex.IsMatch(sample, email);
         }
+
+        //Regex for Mobile Number
+        public static string mobileNo = "^(91)?[ ][789][0-9]{9}$";
+        public bool ValidMobileNo(string sample)
+        {
+            return Regex.IsMatch(sample, mobileNo);
+        }
     }
 }

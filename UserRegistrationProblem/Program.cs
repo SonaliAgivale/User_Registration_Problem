@@ -13,12 +13,12 @@ namespace UserRegistrationProblem
             //creating object of class
             UserRegistration userRegistration = new UserRegistration();
             //Enter the String inside if condition for validation
-            if (userRegistration.EmailID("Sonali.111@gmail.com.in"))
+            if (userRegistration.ValidMobileNo("91 7155679901"))
             {
-                Console.WriteLine("Entered Email String are VALID");
+                Console.WriteLine("Entered Mobile No are VALID");
             }
             else
-                Console.WriteLine("Entered Email String are INVALID");
+                Console.WriteLine("Entered Mobile No are INVALID");
                 Console.ReadKey();
         }
     }
