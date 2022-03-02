@@ -10,14 +10,16 @@ namespace UserRegistrationProblem
     {
         static void Main(string[] args)
         {
+            //creating object of class
             UserRegistration userRegistration = new UserRegistration();
+            //Enter the String inside if condition for validation
             if (userRegistration.validateString("Sonali"))
             {
-                Console.WriteLine("Valid");
+                Console.WriteLine("Enter String are Valid");
             }
             else
-                Console.WriteLine("Invalid");
-            Console.ReadKey();
+                Console.WriteLine("Enter String are Invalid");
+                Console.ReadKey();
         }
     }
 }
