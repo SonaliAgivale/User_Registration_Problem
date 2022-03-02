@@ -36,5 +36,13 @@ namespace UserRegistrationProblem
         {
             return Regex.IsMatch(sample, mobileNo);
         }
+
+        //Regex for Password
+        public static string Password = "^[a-z]{8,}$";
+        public bool validPassword(string sample)
+        {
+            return Regex.IsMatch(sample, Password);
+        }
+
     }
 }
