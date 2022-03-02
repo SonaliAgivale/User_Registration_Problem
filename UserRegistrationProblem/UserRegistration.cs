@@ -22,5 +22,12 @@ namespace UserRegistrationProblem
         {
             return Regex.IsMatch(sample, regex1);
         }
+
+        //Regex For Email
+        public static string email = "^[A-Za-z0-9]+([._#%+][A-Za-z0-9]+)?[@][A-Za-z]+[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
+        public bool EmailID(string sample)
+        {
+            return Regex.IsMatch(sample, email);
+        }
     }
 }
