@@ -13,12 +13,12 @@ namespace UserRegistrationProblem
             //creating object of class
             UserRegistration userRegistration = new UserRegistration();
             //Enter the String inside if condition for validation
-            if (userRegistration.validPassword("passwordss"))
+            if (userRegistration.validPassword2("Ppawordss"))
             {
-                Console.WriteLine("Entered Mobile No are VALID");
+                Console.WriteLine("Entered Password are VALID");
             }
             else
-                Console.WriteLine("Entered Mobile No are INVALID");
+                Console.WriteLine("Entered Password are INVALID");
                 Console.ReadKey();
         }
     }
