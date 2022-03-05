@@ -10,7 +10,7 @@ namespace UserRegistrationProblem
     {
         //Regex For First Name
         //Creating the Regex According to requirement
-        public static string regex = "^[A-Z]{1}[a-z]{3,}$";     
+        public static string regex = "^[A-Z]{1}[a-z]{3,}$";
         public bool validateString(string sample)
         {
             return Regex.IsMatch(sample, regex);
@@ -45,10 +45,17 @@ namespace UserRegistrationProblem
         }
 
         //Regex for Password rule2
-        public static string Password2 = "^[A-Z][a-z]{8,}$";
+        public static string Password2 = "^[A-Z][a-zA-Z]{8,}$";
         public bool validPassword2(string sample)
         {
             return Regex.IsMatch(sample, Password2);
+        }
+
+        //Regex for Password rule2,3-4 n  (?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}
+        public static string Passwords = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|]).{8,20}$";
+    public bool validPasswords(string sample)
+        {
+            return Regex.IsMatch(sample, Passwords);
         }
     }
 }
